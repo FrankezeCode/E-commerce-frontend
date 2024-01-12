@@ -73,7 +73,7 @@ const Navbar = () => {
                         <input type='text' placeholder='Search'
                         className='w-[200px] sm:w-[200px] group-hover:w-[300px]
                         transition-all duration-300 rounded-full border border-gray-300
-                        px-4 py-1 focus:outline-none focus:border-1 focus:border-primary'
+                        px-4 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-800'
                         />
                     <ImSearch className="text-gray-500 group-hover:text-primary absolute
                     top-1/2 -translate-y-1/2 right-3"/>
@@ -118,7 +118,7 @@ const Navbar = () => {
                     <a href="#"
                     className='flex items-center gap-[2px] py-2'
                     >
-                        Trending
+                        Trending Products
                         <span>
                             <FaCaretDown 
                             className="transition-all duration-200 group-hover:rotate-180"
@@ -126,7 +126,7 @@ const Navbar = () => {
                         </span>
                     </a>
                     <div className='absolute z-[9999] hidden group-hover:block w-[150px] 
-                    rounded-md bg-white p-2 text-black '>
+                    rounded-md bg-white p-2 text-black shadow-md'>
                         <ul>
                             {DropdownLinks.map((data)=>(
                                 <li>
